@@ -3,17 +3,17 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import Logo from "../../images/OLX.png";
+// import { useHistory } from "react-router-dom"
 import "./Login.css";
 
 function Login({ token, setToken }) {
   let [username, setUsername] = useState("");
   let [password, setPassword] = useState("");
   const navigate = useNavigate();
-
+  // const history = useHistory();
   const handleSubmit = (e) => {
     e.preventDefault();
-    setPassword("");
-    setUsername("");
+    
     axios({
       url: "https://fakestoreapi.com/auth/login",
       method: "POST",
@@ -26,11 +26,17 @@ function Login({ token, setToken }) {
         console.log(res.data.token);
         setToken(res.data.token);
         localStorage.setItem("userToken", res.data.token);
-        navigate.push("/");
+        
+    
+        // history.push("/");
+        
       })
       .catch((err) => {
         console.log(err.response);
       });
+      setPassword("");
+    setUsername("");
+    navigate("/");
   };
   return (
     <>
