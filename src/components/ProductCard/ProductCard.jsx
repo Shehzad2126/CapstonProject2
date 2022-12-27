@@ -18,11 +18,11 @@ function ProductCard(p) {
                 </div>
                 <div class="card-body">
                   <div className="d-flex text-black  justify-content-between">
-                    <h5 class="under mb-0">{(p.name).slice(0,17)}</h5>
+                    <h5 class="mb-0">{(p.name).slice(0,17)}</h5>
                     <FavoriteBorderIcon />
                   </div>
-                  <h5 class="under text-dark my-3 mb-0">&#8360;. {p.price* 100}</h5>
-                  <p className="text-dark under my-3">{(p.description.slice(0,25))}</p>
+                  <h5 class=" text-dark my-3 mb-0">&#8360;. {p.price* 100}</h5>
+                  <p className="text-dark  my-3">{(p.description.slice(0,25))}</p>
                 </div>
               </div>
             </div>

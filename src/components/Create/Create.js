@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Create.css";
+import { useNavigate } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import axios from "axios";
 const Create = () => {
@@ -10,7 +11,7 @@ const Create = () => {
   let [description, setDescription] = useState("");
   let [image, setImage] = useState();
 
-
+  const navigate = useNavigate();
 
   const handleSubmit = async() => {
     
@@ -23,6 +24,7 @@ const Create = () => {
     });
     setData(result.data)
     console.log(data)
+    navigate("/");
     
   };
   return (

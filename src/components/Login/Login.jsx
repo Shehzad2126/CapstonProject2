@@ -26,10 +26,6 @@ function Login({ token, setToken }) {
         console.log(res.data.token);
         setToken(res.data.token);
         localStorage.setItem("userToken", res.data.token);
-        
-    
-        // history.push("/");
-        
       })
       .catch((err) => {
         console.log(err.response);
