@@ -43,22 +43,10 @@ function Header() {
             <div className="d-flex justify-content-between">
               <img className="lowerLogo col-1" src={OLXLogo} alt="OLX logo" />
 
-              <span class="d-flex justify-content-between border-1   border-black location p-2  m-0 bg-white col-md-3">
-                <span className="icon ">
-                  <SearchIcon />
-                </span>
+              
+              <span class="d-flex justify-content-between border-1   border-black search p-2  m-0 bg-white col-md-8">
                 <input
-                  class="input-field w-75 border-0 "
-                  placeholder="Location"
-                  type="text"
-                />
-                <span className="icon ">
-                  <KeyboardArrowDownIcon />
-                </span>
-              </span>
-              <span class="d-flex justify-content-between border-1   border-black search p-2  m-0 bg-white col-md-6">
-                <input
-                  class="input-field w-75 border-0 "
+                  class="input-field w-100 border-0 "
                   placeholder="Find Cars, Mobile Phones and more..."
                   type="text"
                 />

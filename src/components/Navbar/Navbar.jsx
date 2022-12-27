@@ -23,40 +23,26 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link" href="sa">
-              Mobile Phones <span class="sr-only"></span>
+              <a className="nav-link" href="/">
+              electronics <span class="sr-only"></span>
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/">
-              Cars
+              jewelery
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/">
-              Motorcycles
+              men's clothing
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/">
-              Houses
+              women's clothing
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/">
-              TV - Video - Audio
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/">
-              Tablets
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/">
-              Land & Plots
-              </a>
-            </li>
+            
           </ul>
         </div>
       </nav>
